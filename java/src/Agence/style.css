@@ -1,0 +1,7 @@
+.head-background
+{
+    -fx-background-color: linear-gradient(to left,#795AF3 ,#3929E0);
+}
+.default-color0.chart-bar { -fx-bar-fill: #ffffff; }
+.default-color1.chart-bar { -fx-bar-fill: #ffffff; }
+.default-color2.chart-bar { -fx-bar-fill: #ffffff; }

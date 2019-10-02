@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="320.0" style="-fx-background-color: #6a94cc;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Authentication.LoginScreenController">
+   <children>
+      <VBox layoutX="55.0" layoutY="80.0" prefHeight="93.0" prefWidth="210.0" spacing="20.0">
+         <children>
+            <JFXTextField fx:id="loginField" promptText="Login" />
+            <JFXPasswordField fx:id="motDePasseField" promptText="Mot de passe" />
+         </children>
+      </VBox>
+      <JFXButton fx:id="LoginButton" layoutX="109.0" layoutY="173.0" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #d0d2d3;" text="Login" />
+   </children>
+</AnchorPane>

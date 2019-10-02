@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="348.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Administration.SceneBuilder.AjoutCompagnieController">
+   <children>
+      <Label layoutX="14.0" layoutY="37.0" text="Nom Compagnie" />
+      <Label layoutX="14.0" layoutY="77.0" text="Adresse" />
+      <Label layoutX="14.0" layoutY="111.0" text="Num Fixe" />
+      <Label layoutX="14.0" layoutY="144.0" text="Num Fax" />
+      <Label layoutX="14.0" layoutY="183.0" text="Site web" />
+      <TextField fx:id="nomC" layoutX="138.0" layoutY="33.0" />
+      <TextField fx:id="adress" layoutX="138.0" layoutY="73.0" />
+      <TextField fx:id="fixe" layoutX="138.0" layoutY="107.0" />
+      <TextField fx:id="fax" layoutX="138.0" layoutY="140.0" />
+      <TextField fx:id="site" layoutX="138.0" layoutY="179.0" />
+      <Button fx:id="addBtn" layoutX="165.0" layoutY="309.0" mnemonicParsing="false" onAction="#AjoutComp" style="-fx-background-color: skyblue;" text="Ajouter Compagnie" />
+      <Label layoutX="10.0" layoutY="223.0" text="User Name" />
+      <Label layoutX="21.0" layoutY="261.0" text="Email" />
+      <TextField fx:id="Uname" layoutX="138.0" layoutY="219.0" />
+      <TextField fx:id="mail" layoutX="138.0" layoutY="257.0" />
+   </children>
+</AnchorPane>

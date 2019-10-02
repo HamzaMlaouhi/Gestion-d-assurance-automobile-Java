@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Compagnie.Agence.GestionAgenceController">
+    <children>
+      <JFXButton layoutX="20.0" layoutY="14.0" onAction="#ajouterAgence" ripplerFill="WHITE" style="-fx-background-color: #473E98;" text="+ Ajouter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="critere" layoutX="381.0" layoutY="14.0" />
+      <JFXButton layoutX="530.0" layoutY="14.0" onAction="#chercher" ripplerFill="WHITE" style="-fx-background-color: #473E98;" text="Filtrer" textFill="WHITE" />
+      <TableView fx:id="table" prefHeight="344.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="50.0">
+        <columns>
+            <TableColumn fx:id="id" prefWidth="31.0" text="id" />
+          <TableColumn fx:id="zone" onEditCommit="#zoneChange" prefWidth="66.0" resizable="false" text="Zone" />
+          <TableColumn fx:id="tel" onEditCommit="#telChange" prefWidth="89.0" resizable="false" text="Telephone" />
+            <TableColumn fx:id="nbr_employer" onEditCommit="#nbrChange" prefWidth="129.0" resizable="false" text="# Employer" />
+            <TableColumn fx:id="fax" onEditCommit="#faxChange" prefWidth="104.0" resizable="false" text="Fax" />
+            <TableColumn fx:id="action" editable="false" prefWidth="138.0" resizable="false" sortable="false" text="Action" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

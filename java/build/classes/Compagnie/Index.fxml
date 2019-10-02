@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane fx:id="split" dividerPositions="0.25" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" scaleShape="false" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Compagnie.IndexController">
+  <items>
+    <AnchorPane fx:id="menu" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Button layoutY="96.0" mnemonicParsing="false" onAction="#gcAction" prefHeight="42.0" prefWidth="146.0" text="Garanties Complémentaires" />
+            <Button layoutY="138.0" mnemonicParsing="false" onAction="#agenceAction" prefHeight="42.0" prefWidth="146.0" text="Agences" />
+            <Button layoutY="180.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="146.0" text="Polices" />
+         </children></AnchorPane>
+    <AnchorPane id="content" fx:id="content" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+  </items>
+</SplitPane>

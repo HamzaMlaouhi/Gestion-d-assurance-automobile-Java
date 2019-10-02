@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="346.0" prefWidth="669.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Assure.GestionVehiculeController">
+    <stylesheets>
+        <URL value="@ajoutervehicule.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="3.0" prefHeight="370.0" prefWidth="668.0">
+         <children>
+            <TextField fx:id="critere" layoutX="239.0" layoutY="24.0" />
+            <Button layoutX="394.0" layoutY="24.0" mnemonicParsing="false" text="filtrer" />
+            <TableView fx:id="table" layoutX="12.0" layoutY="56.0" prefHeight="300.0" prefWidth="650.0">
+               <columns>
+                  <TableColumn fx:id="chassis" prefWidth="105.0" text="chassis" />
+                  <TableColumn fx:id="Datecircule" prefWidth="100.0" text="Datecircule" />
+                  <TableColumn fx:id="Puissance" text="Puissance" />
+                  <TableColumn fx:id="Carburant" prefWidth="69.0" text="Carburant" />
+                  <TableColumn fx:id="Nombrepneu" minWidth="2.0" prefWidth="89.0" text="Nombrepneu" />
+                  <TableColumn fx:id="Valvenale" minWidth="0.0" prefWidth="87.0" text="Valvenale" />
+                  <TableColumn fx:id="Primerc" minWidth="0.0" prefWidth="60.0" text="Primerc" />
+                  <TableColumn fx:id="action" minWidth="0.0" prefWidth="68.0" text="action" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

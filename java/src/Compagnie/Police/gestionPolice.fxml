@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Compagnie.Police.GestionPoliceController">
+    <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#ajouterPolice" text="+ Ajouter" />
+      <Button layoutX="591.0" layoutY="14.0" mnemonicParsing="false" onAction="#chercher" text="filtrer" />
+      <DatePicker fx:id="critere" layoutX="417.0" layoutY="14.0" />
+      <TableView fx:id="table" layoutX="-1.0" prefHeight="344.0" prefWidth="650.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="50.0">
+        <columns>
+            <TableColumn fx:id="assure" prefWidth="75.0" text="Assure" />
+          <TableColumn fx:id="agence" prefWidth="106.0" resizable="false" text="Agence" />
+          <TableColumn fx:id="classe" onEditCommit="#classeChange" prefWidth="85.0" resizable="false" text="Classe" />
+            <TableColumn fx:id="coef" onEditCommit="#coeffChange" prefWidth="104.0" resizable="false" text="Coef_classe" />
+            <TableColumn fx:id="nature" onEditCommit="#natureChange" prefWidth="82.0" resizable="false" text="Nature" />
+            <TableColumn fx:id="usage" minWidth="2.0" onEditCommit="#usageChange" prefWidth="111.0" resizable="false" text="Usage_Contrat" />
+            <TableColumn prefWidth="86.0" resizable="false" text="Action" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

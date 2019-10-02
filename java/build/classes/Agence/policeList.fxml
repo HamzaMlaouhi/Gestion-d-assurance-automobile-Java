@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="497.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Agence.PoliceListController">
+   <children>
+      <TableView fx:id="pol" layoutX="6.0" layoutY="61.0" prefHeight="294.0" prefWidth="689.0">
+         <columns>
+            <TableColumn fx:id="dte" prefWidth="106.0" text="Date signature" />
+            <TableColumn fx:id="DteE" prefWidth="111.0" text="Date echeance" />
+            <TableColumn fx:id="stat" prefWidth="75.0" text="Statut" />
+            <TableColumn fx:id="mnt" prefWidth="95.0" text="Montant" />
+            <TableColumn fx:id="classe" prefWidth="87.0" text="Classe " />
+            <TableColumn fx:id="asur" prefWidth="100.0" text="Assure id" />
+            <TableColumn fx:id="agnc" prefWidth="114.0" text="Agence id" />
+         </columns>
+      </TableView>
+      <Label layoutX="216.0" layoutY="21.0" text="Liste des polices d'assurance : " textFill="#e81111">
+         <font>
+            <Font name="Arial Unicode MS" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedAreaChart?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Assure.StatistiqueController">
+   <children>
+      <StackedAreaChart fx:id="stat" layoutX="7.0" layoutY="8.0" prefHeight="384.0" prefWidth="587.0">
+        <xAxis>
+          <NumberAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </StackedAreaChart>
+   </children>
+</AnchorPane>

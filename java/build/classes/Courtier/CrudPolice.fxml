@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Courtier.CrudPoliceController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="1291.0">
+         <children>
+            <VBox layoutX="26.0" layoutY="22.0" prefHeight="386.0" prefWidth="137.0" spacing="15.0">
+               <children>
+                  <Label text="Code Assure">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="idAgence" text="ID agence">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Classe ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Montant">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Coefficient classe">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Date effet ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Date echeance">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Status">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nature">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Usage">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="186.0" layoutY="22.0" prefHeight="392.0" prefWidth="129.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="codeAssureField" />
+                  <TextField fx:id="idAgenceField" />
+                  <TextField fx:id="classeField" />
+                  <TextField fx:id="montantField" />
+                  <TextField fx:id="coefficientField" />
+                  <DatePicker fx:id="dateEffetField" />
+                  <DatePicker fx:id="dateEcheanceField" />
+                  <TextField fx:id="statusField" />
+                  <TextField fx:id="natureField" />
+                  <TextField fx:id="usageField" />
+               </children>
+            </VBox>
+            <TableView fx:id="TableView" layoutX="327.0" layoutY="22.0" prefHeight="459.0" prefWidth="877.0">
+               <columns>
+                  <TableColumn fx:id="idColumn" prefWidth="35.0" text="ID" />
+                  <TableColumn fx:id="codeAssureColumn" prefWidth="120.0" text="Code Assure" />
+                  <TableColumn fx:id="idAgenceColumn" prefWidth="120.0" text="ID agence" />
+                  <TableColumn fx:id="classeColumn" prefWidth="60.0" text="Classe" />
+                  <TableColumn fx:id="montantColumn" prefWidth="60.0" text="Montant" />
+                  <TableColumn fx:id="coefficientColumn" prefWidth="114.0" text="Coefficient classe" />
+                  <TableColumn fx:id="dateEffetColumn" prefWidth="93.0" text="Date effet" />
+                  <TableColumn fx:id="dateEcheanceColumn" prefWidth="93.0" text="Date echeance" />
+                  <TableColumn fx:id="statusColumn" prefWidth="60.0" text="Status" />
+                  <TableColumn fx:id="natureColumn" prefWidth="60.0" text="Nature" />
+                  <TableColumn fx:id="usageColumn" prefWidth="60.0" text="Usage" />
+               </columns>
+            </TableView>
+            <HBox layoutX="19.0" layoutY="414.0" prefHeight="39.0" prefWidth="308.0" spacing="5.0">
+               <children>
+                  <JFXButton fx:id="insertButton" onAction="#ajouterPolice" style="-fx-background-color: #d6cfc0;" text="Inserer" />
+                  <JFXButton fx:id="deleteButton" onAction="#delete" style="-fx-background-color: #d6cfc0;" text="Supprimer" />
+                  <JFXButton fx:id="resetButton" onAction="#clearFields" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #d6cfc0;" text="Reset" />
+                  <JFXButton onAction="#update" style="-fx-background-color: #d6cfc0;" text="Modifier" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="27.0" layoutY="455.0" prefHeight="48.0" prefWidth="293.0" spacing="15.0">
+               <children>
+                  <TextField fx:id="idField" promptText="ID a rechercher" />
+                  <JFXButton fx:id="updateButton" lineSpacing="5.0" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: #d6cfc0;" text="Chercher" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

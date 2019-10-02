@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Expert.EditerRapportController">
+    <stylesheets>
+        <URL value="@editerrapport.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="46.0" layoutY="74.0" text="Date" />
+      <Label layoutX="45.0" layoutY="126.0" text="Titre" />
+      <Label layoutX="45.0" layoutY="192.0" text="Detaille" />
+      <Label layoutX="43.0" layoutY="254.0" text="Document" />
+      <TextField fx:id="date" layoutX="188.0" layoutY="70.0" />
+      <TextField fx:id="titre" layoutX="188.0" layoutY="122.0" />
+      <TextField fx:id="detaille" layoutX="188.0" layoutY="188.0" />
+      <TextField fx:id="document" layoutX="188.0" layoutY="250.0" />
+      <Label layoutX="175.0" layoutY="14.0" text="Modifier un Rapport">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="218.0" layoutY="307.0" mnemonicParsing="false" onAction="#update" text="Sauvegarder" />
+   </children>
+</AnchorPane>

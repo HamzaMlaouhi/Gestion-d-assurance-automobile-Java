@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="558.0" prefWidth="844.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Agence.AgentListController">
+   <children>
+      <TableView fx:id="agt" layoutX="8.0" layoutY="66.0" prefHeight="292.0" prefWidth="792.0">
+         <columns>
+            <TableColumn fx:id="cin" prefWidth="89.0" text="CIN" />
+            <TableColumn fx:id="nom" onEditCommit="#nomChnage" prefWidth="73.0" text="Nom" />
+            <TableColumn fx:id="pren" onEditCommit="#prenChnage" prefWidth="97.0" text="Prenom" />
+            <TableColumn fx:id="tel" onEditCommit="#telChnage" prefWidth="155.0" text="Téléphone " />
+            <TableColumn fx:id="adr" onEditCommit="#adrChnage" prefWidth="138.0" text="Adresse " />
+            <TableColumn fx:id="email" onEditCommit="#mailChnage" prefWidth="164.0" text="email" />
+            <TableColumn fx:id="action" prefWidth="75.0" text="Action" />
+         </columns>
+      </TableView>
+      <Label layoutX="295.0" layoutY="33.0" text="Liste des agents: " textFill="#e81111">
+         <font>
+            <Font name="Arial Unicode MS" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

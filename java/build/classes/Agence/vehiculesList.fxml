@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="584.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Agence.VehiculesListController">
+   <children>
+      <TableView fx:id="veh" layoutX="-4.0" layoutY="56.0" prefHeight="292.0" prefWidth="803.0">
+         <columns>
+            <TableColumn fx:id="chas" prefWidth="48.0" text="Chassis" />
+            <TableColumn fx:id="dtec" prefWidth="81.0" text="Date circulation" />
+            <TableColumn fx:id="puis" onEditCommit="#puissanceChnage" prefWidth="83.0" text="puissance" />
+            <TableColumn fx:id="carb" onEditCommit="#carburantChnage" prefWidth="68.0" text="Carburant" />
+            <TableColumn fx:id="nbrp" onEditCommit="#nombreChnage" prefWidth="94.0" text="Nombre pneu" />
+            <TableColumn fx:id="valV" onEditCommit="#valvChnage" prefWidth="93.0" text="Valeure Venale" />
+            <TableColumn fx:id="ref" onEditCommit="#refCChnage" prefWidth="133.0" text="Référence Contrat" />
+            <TableColumn fx:id="modl" onEditCommit="#modeleChnage" prefWidth="74.0" text="Modele" />
+            <TableColumn fx:id="action" prefWidth="128.0" text="Action" />
+         </columns>
+      </TableView>
+      <Label layoutX="286.0" layoutY="23.0" text="Liste des véhicules: " textFill="#e81111">
+         <font>
+            <Font name="Arial Unicode MS" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

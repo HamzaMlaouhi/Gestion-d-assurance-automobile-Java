@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="462.0" prefWidth="584.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Expert.ChercherReclamationController">
+    <stylesheets>
+        <URL value="@chercherreclamation.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="29.0" layoutY="66.0" text="Code Reclamation" />
+      <TextField fx:id="code" layoutX="212.0" layoutY="62.0" />
+      <Button layoutX="405.0" layoutY="62.0" mnemonicParsing="false" onAction="#chercher" text="Chercher" />
+      <Label layoutX="189.0" layoutY="119.0" text="Résultat de la Recherche">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="196.0" layoutY="14.0" text="Chercher une Reclamation">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablee" layoutX="19.0" layoutY="149.0" prefHeight="241.0" prefWidth="565.0">
+        <columns>
+          <TableColumn fx:id="coderec" prefWidth="116.0" text="Code Reclamation" />
+          <TableColumn fx:id="daterec" prefWidth="109.0" text="Date Reclamation" />
+            <TableColumn minWidth="0.0" prefWidth="0.0" text="Lieu Reclamation" />
+            <TableColumn fx:id="lieurec" prefWidth="129.0" text="Lieu Reclamation" />
+            <TableColumn fx:id="objetrec" minWidth="0.0" prefWidth="121.0" text="Objet Reclamation" />
+            <TableColumn fx:id="commentairerec" prefWidth="97.0" text="Commentaire" />
+        </columns>
+      </TableView>
+      <Button layoutX="490.0" layoutY="62.0" mnemonicParsing="false" onAction="#affichagerectBtn" text="Affichage des reclamations" />
+   </children>
+</AnchorPane>

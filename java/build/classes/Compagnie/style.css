@@ -1,0 +1,12 @@
+.head-background
+{
+    -fx-background-color: linear-gradient(to left,#795AF3 ,#3929E0);
+}
+
+.accept{
+    -fx-background-color: olivedrab;
+}
+
+.remove{
+    -fx-background-color: tomato;
+}
