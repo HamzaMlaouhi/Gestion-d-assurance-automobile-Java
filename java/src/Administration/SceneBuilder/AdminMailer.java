@@ -27,8 +27,8 @@ public class AdminMailer {
     
     public void send(String mail){
         
-          String myEmail = "omranimahmoud@gmail.com";
-            String password = "facecheckdisnuts";
+          String myEmail = "ur email";
+            String password = "ur password";
   String opponentEmail = mail;
   Properties pro = new Properties();
   pro.put("mail.smtp.host", "smtp.gmail.com");
